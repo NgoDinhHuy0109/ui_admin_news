@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+            rel="stylesheet">
+        <link rel="stylesheet" href="/style.css">
+        <style>
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-bottom: 20px;
+            }
+            
+            th, td {
+                border: 1px solid #ddd;
+                padding: 8px;
+                text-align: left;
+            }
+    
+            th {
+                background-color: #f2f2f2;
+            }
+    
+            tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+    
+            tr:hover {
+                background-color: #ddd;
+            }
+        </style>
+        <title>Category</title>
+    </head>
+    <body>
+        <main>
+            <h1>Category</h1>
+            <div class="update_category">
+                <div class="analyse">
+                    <h2>Update Category</h2>
+                    <div class="status">
+                        <form class="contact_form" action method="post">
+                            <input type="hidden" name="action"
+                                value="add">
+                            <label>Category name: </label> <br>
+                            <input type="text" name="categoryName"
+                                required><br>
+                            <label>Description: </label> <br>
+                            <input type="text" name="description"
+                                required><br>
+                            <br>
+                            <button type="submit" id="submit"
+                                class=" navbar_btn"> Add </button>
+                            <button type="submit" id="submit"
+                                class=" navbar_btn"> Edit </button>
+                            <button type="submit" id="submit"
+                                class=" navbar_btn"> Delete </button>
+                        </form>
+                    </div>
+                    <div class="status">
+                        <table>
+                            <tr>
+                                <th>Category Name</th>
+                                <th>Description</th>
+                                <th>Created Time</th>
+                                <th>Updated Time</th>
+                            </tr>
+                            <!-- Backend data will be inserted here dynamically -->
+                           
+                            <!-- Add more rows for additional data as needed -->
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="/orders.js"></script>
+        <script src="/index.js"></script>
+        <!-- End of Main Content -->
+    </body>
+</html>
